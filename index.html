@@ -16,18 +16,99 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body class="text-center">
- <div class="Img404-div">
-  <img class="Img404" src="images/404.svg" alt="">
+  <section>
+
+    <div class="container-fluid">
+
+     <div class="navbar-top-div">
+
+   <nav class="navbar  navbar-expand-lg navbar-light">
+    <a href="#"> <img class="logo" src="/images/logo-svg.svg" alt="logo" href="#" /></a>
+        <a class="navbar-brand Open-Sans" href="#">LABORARE</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+          <img class="navbar-toggler-icon" src="/images/navbar-button.svg" alt="logo" href="#" />
+
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link change Open-Sans" href="#footer">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link change Open-Sans" href="#pricing">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link change Open-Sans" href="#cta">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+     </div>
+</div>
+<img class="head-image" src="/images/boy-header-image.png" alt="">
+<div class="head-main-div">
+  <div class="container-fluid text-center">
+
+  <h1 class="heading-head-div Open-Sans">Login Swiftly With The Pre-defined Details</h1>
+  <h5 class="subheading-head-div Lato">Login below and get access to all the test assigned.</h5>
   </div>
-  <h3 class="mainErrorMessage"><%= mainErrorMessage %></h3>
-  <h4 class="pagesToGo">Go to some amazing pages</h4>
-  <div class="">
-    <a class="buttons404" href="/">Home</a>
-    <a class="buttons404" href="/login">Login</a>
-    <a class="buttons404" href="/about">About</a>
-    <h6 class="or-text">Or</h6>
-    <a class="back404" href= <%= comingPlace %>>Back to where you were</a>
-  </div>
+</div>
+
+  </section>
+
+
+  <section id="login-section">
+    <div class="login-form">
+      <a class="error-redirect-link" id="error-redirect" href="#error"></a>
+      <div id="error" class="alert alert-danger password-error-div" role="alert">
+        <h6>This user does not exist the username/password is incorrect</h6>
+        <h6>Don't worry 78 Percent People Forget Their Passwords</h6>
+
+      </div>
+
+        <form class="" action="/login" method="post">
+      <h3 class="login-name">Username</h3>
+      <input class="login-inputs" type="text" name="username" required>
+      <h3 class="login-name">Password</h3>
+      <input class="login-inputs" type="password" name="password" id="password" required>
+      <div class="show-password-div">
+      <input class="" type="checkbox" onclick="showPassword()" name="" value="">
+      <h5 class="show-password">Show Password</h5>
+      </div>
+      <button class="btn btn-primary btn-lg user-login-button" type="submit" name="submitButton">Login<img class="login-page-arrow" src="/images/login-arrow-white.svg"/></button>
+
+    </form>
+
+
+    </div>
+  </section>
+
+    <script>
+
+        if(<%=error%> === true){
+          var error = document.getElementById("error");
+          error.style.display = "inline-block";
+          var errorRedirect = document.getElementById("error-redirect");
+          errorRedirect.click();
+        }else{
+          var error = document.getElementById("error");
+          error.style.display = "none";
+        }
+
+
+      function showPassword() {
+  var x = document.getElementById("password");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+
+
+    </script>
 
 </body>
 </html>
