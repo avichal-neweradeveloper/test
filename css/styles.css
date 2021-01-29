@@ -1,0 +1,342 @@
+.container-fluid{
+  padding: 0 15% ;
+}
+.yellow{
+  color: #FFFD4C;
+}
+body{
+  display: block;
+}
+h1{
+  text-align: center;
+}
+h5{
+  text-align: center;
+}
+.Open-Sans{
+  font-family: 'Open Sans';
+  font-weight: 400;
+}
+.Lato{
+  font-family: 'Lato';
+  font-weight: 400;
+}
+.float-left{
+  display: inline-block;
+  width: 50%;
+  float:left;
+}
+.float-left{
+  display: inline-block;
+  width: 50%;
+  float:right;
+}
+.text-align-left{
+  text-align: left;
+}
+
+/************************** Home page("/") **************************/
+
+
+/* Navigation bar */
+
+.logo{
+  width: 40px;
+  margin-right: 1%;
+}
+.navbar-brand{
+  padding-left: 10px;
+  font-size: 2rem;
+}
+.nav-item{
+  padding : 0 18px;
+}
+.nav-link{
+  font-size: 1rem;
+  color: red;
+}
+.navbar-toggler{
+  border: none;
+}
+.navbar-toggler:focus{
+  outline: none;
+}
+.navbar-top-div{
+ padding: 0 0;
+}
+
+/*head div top area*/
+
+.heading-head-div{
+  /* game changer vw (viewport width) width of the device you are using */
+  font-size: calc(2.5rem + 1vw);
+  padding-top: 10%;
+  margin-bottom: 2%;
+}
+.subheading-head-div{
+font-size: calc(1rem +0.5vw);
+}
+.head-image{
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 40vw;
+  z-index: -1;
+}
+.login-arrow{
+  width: 20px;
+}
+.login-button{
+  margin-top: 5%;
+  padding: 0.5rem 2rem;
+  border-radius: 50px;
+  border: none;
+  color: #0159DB;
+  background-color: #FFFD4C;
+  text-decoration: none;
+}
+.login-button:hover{
+  text-decoration: none;
+}
+
+/*Features section*/
+
+#features{
+  padding-top: 37vw;
+}
+.features-heading{
+  font-size: calc(1.8vw + 100%);
+}
+.cool-little-line{
+  border-color: #0159DB;
+  border-radius: 5px;
+  border-width:6px;
+  width: calc(20px + 2.5%);
+}
+.features-image{
+  margin-top: 8%;
+width: 60%;
+}
+
+/*footer section*/
+#footer{
+  margin-top: 10%;
+}
+.footer-gradient{
+    transform: scaleX(-1);
+   -webkit-transform: scaleX(-1);
+    width: 100%;
+    z-index: -2;
+    position: absolute;
+    left:0;
+    padding-top: 10%;
+}
+.footer-logo{
+  width: 10vw;
+  margin: 1vw 1vw 0 10vw
+}
+.footer-brand{
+  position: absolute;
+  padding-top: 3vw;
+  padding-right: 20%;
+  color: white;
+  font-size: 4vw;
+}
+.footer-brand:hover{
+  text-decoration: none;
+}
+.footer-brandkit{
+  position: absolute;
+  padding: 20% 60vw 0 0;
+}
+.footer-links{
+  text-align: left;
+  display: block;
+  padding-left: 102%;
+  padding-top: 5%;
+  color: white;
+  font-size: 1.7vw;
+}
+.footer-links:first-child{
+  padding-top: 10%;
+  padding-bottom: 0;
+}
+.footer-links:hover{
+  text-decoration: none;
+}
+.Copyright-text-footer{
+  color: white;
+  position: absolute;
+  font-size: 1.2vw;
+  margin-left: 26%;
+  padding-top: 5%;
+  margin-bottom: 0;
+  display: block;
+}
+/************************** Login page("/login") **************************/
+
+#login-section{
+  margin: 30% 0 20vw 0;
+}
+.user-login-button{
+  background-color: #0159DB;
+  display: block;
+  margin:  30px auto 0 auto;
+  padding: 10px 40px;
+  border-radius: 50px;
+}
+.user-login-button:hover{
+  background-color: #0159DB;
+}
+.login-page-arrow{
+   width: 25px;
+   margin-left: 10px;
+}
+.login-inputs{
+  background-color: #EDEDED;
+  height: 40px;
+  /* font-size:14px; */
+  border: none;
+  width: calc(250px + 10vw);
+  border-radius: 7px;
+}
+.login-inputs:focus{
+  border: none;
+  outline: none;
+}
+.login-name:last-of-type{
+  margin-top: 4%;
+}
+.show-password{
+  /* margin-right: 9%; */
+  display: inline-block;
+}
+.password-error-div{
+  display: inline-block;
+  border-radius: 5px;
+  margin-top: 2%;
+}
+.error-redirect-link{
+  display: none;
+}
+
+/************************** 404 page **************************/
+.Img404{
+  width: calc(40% + 10rem);
+  position: absolute;
+  z-index: -1;
+}
+.Img404-div{
+  z-index: -1;
+  margin: 0 50% 0 0;
+}
+.mainErrorMessage{
+  padding: calc(6rem + 22%) 0 0 0;
+  font-size: calc(0.5rem + 1vw);
+}
+.pagesToGo{
+  padding: calc(3rem + 10%) 0 calc(1rem + 1%) 0;
+  font-size: calc(1rem + 1vw);
+}
+.buttons404{
+  margin: 5% 2% 2% 2%;
+  padding: 0.5rem calc(1rem + 1.5%);
+  border-radius: 50px;
+  border: none;
+  color: white;
+  background-color: #0159DB;
+  text-decoration: none;
+}
+.buttons404:hover{
+  text-decoration: none;
+  color: white;
+}
+.or-text{
+  margin: calc(1rem + 1vw) 2% 1% 2%;
+  font-size: calc(0.8rem + 0.8vw);
+}
+.back404{
+  color: #0159DB;
+}
+.back404:hover{
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1200px) {
+/************************** Home page("/") **************************/
+
+  /*head div*/
+  .head-image{
+    height: 55%;
+  }
+  /*features*/
+  #features{
+    padding-top: 30%;
+  }
+
+/************************** Login page("/login") **************************/
+
+#login-section{
+  margin: 30% 0 20vw 0;
+}
+
+/************************** 404 page **************************/
+
+.Img404-div{
+  z-index: -1;
+  margin: 0 0 0 calc(-30% + -15rem);
+}
+
+}
+
+@media (max-width:600px) {
+  .container-fluid{
+    padding: 0 10% ;
+  }
+
+/************************** Home page("/") **************************/
+  /*head section*/
+  .navbar-brand{
+    display: none;
+  }
+  .head-image{
+    height: 50%;
+  }
+  .heading-head-div{
+    font-size: calc(2rem + 2vw);
+  }
+  .subheading-head-div{
+    font-size: calc(0.6rem + 1vw);
+  }
+  /*fetures section */
+  .features-image{
+  width: 70%;
+  }
+  #features{
+  padding-top: 37vw;
+  }
+
+/************************** Login page("/login") **************************/
+#login-section{
+  margin: 50% 0 30vw 0;
+}
+
+/************************** 404 page **************************/
+
+.Img404-div{
+  z-index: -1;
+  margin: 0 0 0 calc(-50% + -8rem);
+}
+}
