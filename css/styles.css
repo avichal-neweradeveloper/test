@@ -315,7 +315,7 @@ width: 60%;
     height: 50%;
   }
   .heading-head-div{
-    font-size: calc(2rem + 2vw);
+   font-size: calc(1.8rem + 1.5vw);
   }
   .subheading-head-div{
     font-size: calc(0.6rem + 1vw);
