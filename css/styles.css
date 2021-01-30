@@ -69,7 +69,7 @@ h5{
 
 .heading-head-div{
   /* game changer vw (viewport width) width of the device you are using */
-  font-size: calc(2.5rem + 1vw);
+  font-size: calc(1.5rem + 1vw);
   padding-top: 10%;
   margin-bottom: 2%;
 }
